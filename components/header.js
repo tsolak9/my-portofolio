@@ -1,15 +1,20 @@
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+}
 
     connectedCallback() {
         this.innerHTML = `
-          <header class="primary header">
+        <header class="primary-header">
         <div class="container navigation">
             <a class="logo" href="index.html"><img src="./resources/images/tsolak.jpg" alt="Tsolakidis Anatolios">Tsolakidis Anatolios</a>
-            <nav class="primary-navigation">
-                <ul role="list">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <img class="icon-hamburger" src="./resources/images/hamburger.png" alt="">
+                <img class="icon-close" src="./resources/images/close.png" alt="">
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul  role="list" aria-label="primary">
                   <li><a href="./about.html">About</a></li>
                   <li><a href="./projects.html">Projects</a></li>
                   <li><a href="./contact.html">Contact</a></li>
