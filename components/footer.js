@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
         <footer>
         <div class="container footer">
           <p>© 2023 Tsolakidis Anatolios</p>
-          <a class="logo" href="#"><img src="./resources/images/tsolak.jpg" alt="Tsolak"></a>
+          <a class="logo" href="#"><img src="./resources/images/tsolak.svg" alt="Tsolak"></a>
           <ul role="list" class="footer-social">
           <li><a href="#">About</a></li>
           <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17.4636119,3.75 L20.3770686,3.75 L14.0120289,10.8513575 L21.5,20.5147059 L15.6369768,20.5147059 L11.0448477,14.6539367 L5.79040931,20.5147059 L2.87519121,20.5147059 L9.68323831,12.9190045 L2.5,3.75 L8.51186669,3.75 L12.6627497,9.10696833 L17.4636119,3.75 Z M16.4410838,18.8124434 L18.0554628,18.8124434 L7.63465906,5.36285068 L5.90226209,5.36285068 L16.4410838,18.8124434 Z"></path></svg></a></li>
