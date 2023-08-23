@@ -10,7 +10,7 @@ require './vendor/autoload.php';
     $subject = $_POST['Subject'];
     $message = $_POST['message'];
 
-$mail = new PHPMailer();
+    $mail = new PHPMailer();
 
 $mail->isSMTP();
 $mail->Host = 'mail.tsolakidisanatolios.gr';
@@ -32,4 +32,3 @@ if (!$mail->send()) {
 } else {
     echo 'Message sent!';
 }
-
