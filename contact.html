@@ -19,12 +19,58 @@
     <header-component></header-component>
 
     <main>
+      <section id="contact">
+        <div class="container">
+            <div class="contact-hero">
+                <h1>Contact me<span class="dots">.</span></h1>
+                <p>Fill out the form below, and I’ll get back to you as soon as possible.</p>
+            </div>
+            
+            <form id="contact-form" method="post" action="./form/email.php" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="name">
+                     <form-group>
+                        <label for="form_name">Name</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Firstname is required">
+                        <div class="help-block with-errors"></div>
+                     </form-group>
+                    </div>
+                    <div class="email">
+                        <form-group>
+                            <label for="form_email">Email</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required">
+                            <div class="help-block with-errors"></div>
+                         </form-group>
+                    </div>
+                    <div class="subject">
+                        <form-group>
+                            <label for="form_subject">Subject</label>
+                            <input id="subject" type="text" name="Subject" class="form-control" placeholder="Subject">
+                            <div class="help-block with-errors"></div>
+                         </form-group>
+                    </div>
+                    <div class="your-message">
+                        <form-group>
+                            <label for="form_message">Your Message</label>
+                            <textarea name="message" id="form_message"  class="form-control" rows="10"  placeholder="Message for me *" required="required" data-error="Please, Leave me a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                         </form-group>
+                    </div>
+                    <div class="sumbit">
+                        <input type="submit" class="button btn-sumbit btn-success btn-send" value="Send message">
+                    </div>
+                </div>
 
+            </form>
+        </div>
+      </section>
         
     </main>
     
 
     <footer-component></footer-component>
+    <script src="./form/contact.js"></script>
     <script type="module" src="./resources/js/main.js"></script>
 </body>
 </html>
