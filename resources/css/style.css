@@ -1,3 +1,4 @@
+/* ========== GLOBAL STYLES =========== */
 :root {
 
 --color-light-gray: #f9fafb;
@@ -23,6 +24,7 @@
 --fs-600: 1.875rem;
 --fs-700: 3.5rem;
 
+--fs-small: var(--fs-300);
 --fs-body: var(--fs-400);
 --fs-primary-heading: var(--fs-700);
 --fs-secondary-heading: var(--fs-500);
@@ -59,6 +61,7 @@ body {
     font-size: var(--fs-body);
     font-weight: var(--fw-regular);
     font-family: var(--ff-body);
+ 
 }
 
 h1 {
@@ -94,6 +97,10 @@ p {
 
 a {
     text-decoration: none;
+}
+
+strong {
+    font-weight: var(--fw-bold);
 }
 
 
@@ -133,10 +140,16 @@ margin-inline: auto;
     color: var(--color-dark-blue);
 }
 
-/* ========== end of Global Styles =========== */
+.card {
+    padding: clamp(2.25rem, 1.364vw + 1.909rem, 3rem);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 2px 6px -2px;
+}
 
-/* ========== styles =========== */
+/* ========== END OF GLOBAL STYLES =========== */
 
+/* ========== Navigation =========== */
 
 .navigation .logo {
     display: flex;
@@ -199,6 +212,12 @@ margin-inline: auto;
     transform: scale(1.1);
 }
 
+.active {
+    text-underline-offset: 0.5ch;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 
 
 /* =============== MOBILE NAVIGATION =============== */
@@ -223,8 +242,6 @@ margin-inline: auto;
 
 @media screen and (max-width: 48em) {
     
-
-
  .navigation {
    display: block;
      
@@ -274,14 +291,104 @@ margin-inline: auto;
     }
      
     ul.nav-social {
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
 }
 
 
 
+/* =============== HOME =============== */
+
+@media screen and (max-width: 48em) {
+    .cv-download {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* =============== ABOUT =============== */
+
+
+/* skills */
+ .skills-title {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-primary-heading);
+    font-weight: var(--fw-bold);
+    margin-bottom: 20px;
+ }
+
+.flex-container p {
+    border-right: 1px solid var(--color-primary);
+    padding-right: 10px;
+    font-weight: var(--fw-bold);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+    flex-wrap: wrap;
+}
+
+.flex-container ul {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    flex-grow: 2;
+}
+
+
+/* experience */
+.skills-img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.container-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    
+}
+
+.content {
+    flex-shrink: 3;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.icon svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.year p {
+ font-size: var(--fs-small);
+}
+
+.position h2 {
+  font-size: var(--fs-secondary-heading);
+  font-weight: var(--fw-bold);
+}
+
+
+
+/* =============== PROJECTS =============== */
 
 
 
@@ -295,12 +402,29 @@ margin-inline: auto;
 
 
 
-/* ========== footer =========== */
+
+/* =============== CONTACT =============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== FOOTER =============== */
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
+    margin-top: auto 0;
 }
 
 
@@ -313,7 +437,6 @@ margin-inline: auto;
 @media screen and (max-width: 48em) {
     .footer {
         display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 20px 0;
         
@@ -322,5 +445,14 @@ margin-inline: auto;
     .footer ul {
        margin: 20px 0;
     }
-    
+
+    .footer p {
+        font-size: var(--fs-300);
+    }
+
+    .footer-social {
+        font-size: var(--fs-300);
+    }
+
+ 
 }
