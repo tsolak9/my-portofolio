@@ -10,7 +10,7 @@ require './vendor/autoload.php';
     $subject = $_POST['Subject'];
     $message = $_POST['message'];
 
-    $mail = new PHPMailer();
+    $mail = new PHPMailer(true);
 
 $mail->isSMTP();
 $mail->Host = 'mail.tsolakidisanatolios.gr';
@@ -19,7 +19,7 @@ $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'tls';
 
 $mail->Username = 'smtp@tsolakidisanatolios.gr';
-$mail->Password = '[A231594a.]';
+$mail->Password = 'code';
 
 $mail->setFrom('info@tsolakidisanatolios.gr', $name);
 $mail->addReplyTo($email, $name);
