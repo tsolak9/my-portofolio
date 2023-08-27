@@ -99,6 +99,9 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--color-primary-light);
+}
 strong {
     font-weight: var(--fw-bold);
 }
@@ -136,6 +139,10 @@ margin-inline: auto;
     border: 1px solid var(--color-primary-light);
 }
 
+.button:visited {
+    color: #fff;
+}
+
 
 .dots {
     color: var(--color-dark-blue);
@@ -158,9 +165,8 @@ margin-inline: auto;
     gap: 0 10px;
 }
 
-.logo > img[alt~="Tsolakidis Anatolios"]{
-    font-size: 8px;
-    color: red!important;
+a.logo {
+    color: var(--color-primary);
 }
 
 .logo > img {
