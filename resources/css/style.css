@@ -53,6 +53,8 @@ body {
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   font-family: var(--ff-body);
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -278,6 +280,10 @@ a.logo {
 }
 
 /* =============== HOME =============== */
+
+main {
+  flex: 1;
+}
 
 @media screen and (max-width: 48em) {
   .cv-download {
