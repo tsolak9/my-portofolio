@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
   constructor() {
     super();
-}
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <header class="primary-header">
         <div class="container navigation">
          <div class="flex-container">
@@ -33,8 +33,7 @@ class Header extends HTMLElement {
         </div>
     </header>
         `;
-      }
+  }
 }
 
-
-customElements.define('header-component', Header);
+customElements.define("header-component", Header);

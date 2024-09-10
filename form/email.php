@@ -5,12 +5,12 @@ use PHPMailer\PHPMailer\SMTP;
 
 require './vendor/autoload.php';
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['Subject'];
-    $message = $_POST['message'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['Subject'];
+$message = $_POST['message'];
 
-    $mail = new PHPMailer(true);
+$mail = new PHPMailer(true);
 
 $mail->isSMTP();
 $mail->Host = 'mail.tsolakidisanatolios.gr';

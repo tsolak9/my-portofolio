@@ -1,10 +1,10 @@
 class Footer extends HTMLElement {
-    constructor() {
-      super();
-    }
-  
-    connectedCallback() {
-      this.innerHTML = `
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
         <footer>
         <div class="container footer">
           <p>© 2023 Tsolakidis Anatolios</p>
@@ -17,7 +17,7 @@ class Footer extends HTMLElement {
         </div>
       </footer>
       `;
-    }
   }
-  
-  customElements.define('footer-component', Footer);
+}
+
+customElements.define("footer-component", Footer);
